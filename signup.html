@@ -1,0 +1,336 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name='viewport' content='initial-scale=1,maximum-scale=1,user-scalable=no' />
+<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+<meta charset=utf-8 />
+<link rel="stylesheet" type="text/css" href=" https://cdn.jsdelivr.net/npm/pretty-checkbox@3.0/dist/pretty-checkbox.min.css">
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+<link href='http://fonts.googleapis.com/css?family=Roboto' rel='stylesheet' type='text/css'>
+<link rel="stylesheet" href="//code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+<script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+<script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+
+
+<link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
+<title></title>
+<style type="text/css">
+  
+@import url(https://fonts.googleapis.com/css?family=Muli);
+@import url(https://fonts.googleapis.com/css?family=Gentium+Basic);
+@import url(https://fonts.googleapis.com/css?family=Roboto:400,500,300,700);
+
+body {
+  margin: 15px;
+  padding-top: 0px;
+
+  font-family: 'Muli', Serif;
+ 
+
+}
+
+  .required:after{
+  content:"required";
+}
+
+
+.container{
+  margin-top:50px;
+}
+
+tr {
+    margin: 20px 0;
+    padding 10px 0;
+}
+input {
+    margin: 5px 0;
+}
+select {
+    margin-left: 10px;
+}
+
+
+
+input[type=text], select {
+    width: 100%;
+    padding: 1px 0px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    box-sizing: border-box;
+    text-transform:;
+    
+}
+
+input[type=text]:focus {
+    background-color: ;
+}
+
+input[type=submit] {
+    width: 40%;
+    background-color: #4CAF50;
+    color: white;
+    padding: 4px 5px;
+    margin: 5px 0px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+input[type=submit]:hover {
+    background-color: red;
+}
+
+.y{
+    width: 60%;
+    background-color: #5d8ffc;
+    color: white;
+    padding: 10px 1px;
+    margin: 8px 0;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    display: block;
+  width: 100%;
+  transition: 0.3s;
+  -webkit-transition: 0.3s;
+  -moz-transition: 0.3s;
+}
+
+
+.y:hover {
+ 
+  background: #fff;
+  color: #5d8ffc;
+  border: 1px solid #5d8ffc;
+  cursor: pointer;
+}
+
+.main-div, .loggedin-div {
+  
+  display: none;
+}
+
+body {
+  background-color: #efefef;
+}
+
+.profile-pic {
+    max-width: 185px;
+    max-height: 200px;
+    display: block;
+}
+
+.file-upload {
+    display: none !important;
+}
+.circle {
+    border-radius: 1000px !important;
+    overflow: hidden;
+    width: 128px;
+    height: 128px;
+    border: 8px solid rgba(255, 255, 255, 0.7);
+    position: absolute;
+    top: 103px;
+}
+img {
+    max-width: 100%;
+    height: auto;
+}
+.p-image {
+  position: absolute;
+  top: 167px;
+  left: 0px;
+  color: #666666;
+  transition: all .3s cubic-bezier(.175, .885, .32, 1.275);
+}
+.p-image:hover {
+  transition: all .3s cubic-bezier(.175, .885, .32, 1.275);
+}
+.upload-button {
+  font-size: 1.2em;
+}
+
+.upload-button:hover {
+  transition: all .3s cubic-bezier(.175, .885, .32, 1.275);
+  color: #999;
+}
+
+.myProgress {
+  background-color: #eee;
+  border-radius: 5px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.25) inset;
+  width: 600px;
+  height: 30px;
+  
+}
+</style>
+
+
+</head>
+<body>
+
+<div style="text-align:center; margin: 0px; padding:0em 0;">  <iframe src="https://www.zeitverschiebung.net/clock-widget-iframe-v2?language=en&size=small&timezone=Africa%2FLagos" width="100%" height="90" frameborder="0" seamless></iframe>  </div>
+
+
+     <div class="form-group">
+          <div class='col-sm-offset-1 col-sm-7'>
+        <a href="/index.html"> <button class="btn btn-danger" > <span class="glyphicon glyphicon-home"></span> Home </button> </a> </div></div>
+<br>
+
+<div class="container" >
+  
+    
+  <div class="row">
+  
+    <div class="col-md-7">
+    <div id="login_div" class="main-div">
+     <form class="form-horizontal" role="form" id="form" onsubmit="return false" onclick="">
+
+       
+        <div  class="form-group">
+      <h4> <span class="glyphicon">&#xe008;</span> Enter your details for new account. </h4>
+          <label class="col-sm-3 control-label"> Email: </label>
+
+          <div class="col-sm-8">
+          <input type="text" class="form-control"  placeholder="Your Email"  id="email_field" required /> </div> </div>
+
+          <div class="form-group">
+          
+          <label  class="col-sm-3 control-label"> Password: </label>
+          <div class="col-sm-8">
+          <input type="Password"  class="form-control" id="password_field" placeholder="Your password"  /> </div> </div>
+
+          
+           <div class="form-group">
+          <div class='col-sm-offset-3 col-sm-7'>
+         <button class="y" id="clic" onclick="create()"> <span class="glyphicon glyphicon-send"></span> Create a new account </button>  </div>
+
+         
+
+        </div>
+       </form>
+      </div>   
+      </div>
+      </div>
+      </div>
+
+
+<div class="container" >   
+  <div class="row">
+  
+    <div class="col-md-7">
+    <div id="user_div" class="loggedin-div">
+     <form class="form-horizontal" role="form"  onsubmit="return false" onclick="">
+     
+    <button type="button" class="btn btn-danger" onclick="logout()"> <span class="glyphicon glyphicon-log-out"></span> Logout </button>
+    <br>
+    <p id="user_para">Welcome !. You're currently logged in. Please ensure to upload your profile picture. Picture </p>
+
+     <p> Kindly click this icon below <span class="glyphicon glyphicon-camera"></span> to upload profile picture. The Picture size must be 150px x 150px</p>
+
+    <br>
+
+<div class="row">
+   <div class="small-12 medium-2 large-2 columns">
+     <div class="circle">
+       <!-- User Profile Image -->
+       <img class="profile-pic" src="http://cdn.cutestpaw.com/wp-content/uploads/2012/07/l-Wittle-puppy-yawning.jpg">
+
+       <!-- Default Image -->
+       <!-- <i class="fa fa-user fa-5x"></i> -->
+     </div>
+     <div class="p-image">
+       <i class="fa fa-camera upload-button"></i>
+
+        
+        <input type="file" class="file-upload" value="upload" accept=".jpg" id="fileButton" />
+        <br><br><br><br><br>
+        <label> <span style='font-size:25px;color:red' class="glyphicon glyphicon-warning-sign"></span>   After uploaded, wait until the bar status is completed (100%) and then click next </label>
+        <progress class="myProgress" value="1" max="100" id="uploader"> 0% </progress>
+       <!-- <progress class="" value="0" max="100" id="uploader">0%</progress> -->
+     </div>
+  </div>
+</div>
+
+
+<br><br><br><br><br><br><br><br><br><br>
+
+<div>
+<br><br>
+    <p> Upload your profile picture and click next for the quiz. </p>
+
+<a href="/index.html"> <button class="btn btn-primary" type="button"><span class="glyphicon glyphicon-triangle-right"></span>   NEXT.. </button></a>
+</div>
+
+</form>
+</div>
+</div>
+</div>
+</div>
+
+<script type="text/javascript">
+  
+$(document).ready(function() {
+
+    
+    var readURL = function(input) {
+        if (input.files && input.files[0]) {
+            var reader = new FileReader();
+
+            reader.onload = function (e) {
+                $('.profile-pic').attr('src', e.target.result);
+            }
+    
+            reader.readAsDataURL(input.files[0]);
+        }
+    }
+    
+
+    $(".file-upload").on('change', function(){
+        readURL(this);
+    });
+    
+    $(".upload-button").on('click', function() {
+       $(".file-upload").click();
+    });
+});
+
+
+</script>
+
+
+
+<script src="https://www.gstatic.com/firebasejs/4.12.0/firebase.js"></script>
+<script>
+  // Initialize Firebase
+  var config = {
+    apiKey: "AIzaSyCA2FKIQgnygLO0TPErIkyEo3P7oLyz0uQ",
+    authDomain: "login-bef04.firebaseapp.com",
+    databaseURL: "https://login-bef04.firebaseio.com",
+    projectId: "login-bef04",
+    storageBucket: "login-bef04.appspot.com",
+    messagingSenderId: "154009214218"
+  };
+  firebase.initializeApp(config);
+</script>
+
+<script type="text/javascript">
+  
+   
+
+
+
+</script>
+
+
+<script src="index.js"></script>
+
+
+</body>
+</html>

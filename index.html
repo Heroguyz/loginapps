@@ -1,0 +1,325 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name='viewport' content='initial-scale=1,maximum-scale=1,user-scalable=no' />
+<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+<meta charset=utf-8 />
+<link rel="stylesheet" type="text/css" href=" https://cdn.jsdelivr.net/npm/pretty-checkbox@3.0/dist/pretty-checkbox.min.css">
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+<link href='http://fonts.googleapis.com/css?family=Roboto' rel='stylesheet' type='text/css'>
+<link rel="stylesheet" href="//code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
+<link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+<link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-social/5.1.1/bootstrap-social.min.css">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+<script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+<script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
+<title></title>
+<style type="text/css">
+  
+@import url(https://fonts.googleapis.com/css?family=Muli);
+@import url(https://fonts.googleapis.com/css?family=Gentium+Basic);
+@import url(https://fonts.googleapis.com/css?family=Roboto:400,500,300,700);
+
+
+body {
+  margin: 15px;
+  padding-top: 0px;
+  background: white;
+  font-family: 'Muli', Serif;
+  background-color: #efefef;
+
+}
+
+  .required:after{
+  content:"required";
+}
+
+
+.container{
+  margin-top:50px;
+}
+
+tr {
+    margin: 20px 0;
+    padding 10px 0;
+}
+input {
+    margin: 5px 0;
+}
+select {
+    margin-left: 10px;
+}
+
+
+
+input[type=text], select {
+    width: 100%;
+    padding: 1px 0px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    box-sizing: border-box;
+    text-transform:;
+    
+}
+
+input[type=text]:focus {
+    background-color: ;
+}
+
+input[type=submit] {
+    width: 40%;
+    background-color: #4CAF50;
+    color: white;
+    padding: 4px 5px;
+    margin: 5px 0px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+input[type=submit]:hover {
+    background-color: red;
+}
+
+.y{
+    width: 80%;
+    background-color: #5d8ffc;
+    color: white;
+    padding: 10px 1px;
+    margin: 8px 0;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    display: block;
+  width: 80%;
+  transition: 0.3s;
+  -webkit-transition: 0.3s;
+  -moz-transition: 0.3s;
+}
+
+
+.y:hover {
+ 
+  background: #fff;
+  color: #5d8ffc;
+  border: 1px solid #5d8ffc;
+  cursor: pointer;
+}
+
+.main-div, .loggedin-div {
+  
+  display: none;
+}
+
+
+
+body {
+  background-color: #efefef;
+}
+
+.profile-pic {
+    max-width: 185px;
+    max-height: 200px;
+    display: block;
+}
+
+.file-upload {
+    display: none !important;
+}
+.circle {
+    border-radius: 1000px !important;
+    overflow: hidden;
+    width: 128px;
+    height: 128px;
+    border: 8px solid rgba(255, 255, 255, 0.7);
+    position: absolute;
+    top: 72px;
+}
+img {
+    max-width: 100%;
+    height: auto;
+}
+.p-image {
+  position: absolute;
+  top: 167px;
+  left: 10px;
+  color: #666666;
+  transition: all .3s cubic-bezier(.175, .885, .32, 1.275);
+}
+.p-image:hover {
+  transition: all .3s cubic-bezier(.175, .885, .32, 1.275);
+}
+.upload-button {
+  font-size: 1.2em;
+}
+
+.upload-button:hover {
+  transition: all .3s cubic-bezier(.175, .885, .32, 1.275);
+  color: #999;
+}
+
+.wrapper {
+  padding: 100px;
+}
+
+.image--cover {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  margin: 20px;
+  border: 8px solid rgba(255, 255, 255, 0.7);
+  object-fit: cover;
+  object-position: center right;
+}
+
+</style>
+
+
+</head>
+<body>
+
+<div style="text-align:center; margin: 0px; padding:0em 0;">  <iframe src="https://www.zeitverschiebung.net/clock-widget-iframe-v2?language=en&size=small&timezone=Africa%2FLagos" width="100%" height="90" frameborder="0" seamless></iframe> <label> Quiz Gaming App...</label> </div>
+
+
+
+
+
+<div class="container">
+  <div class="row">
+  
+    <div class="col-md-7">
+    <div id="login_div" class="main-div">
+     <form class="form-horizontal" role="form" id="form" onsubmit="return false" onclick="">
+       
+        <div  class="form-group">
+      <div class="panel panel-default">
+      <div class="panel-heading"><label> Quiz Time ! </label> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp; &nbsp; <img src="/Quiz3.gif" width="100px" height="55px" /> </div> 
+      
+    </div>
+          <label class="col-sm-3 control-label"> Email: </label>
+
+          <div class="col-sm-8">
+          <input type="text" class="form-control"  placeholder="Your Email"  id="email_field" required /> </div> </div>
+
+          <div class="form-group">
+          
+          <label  class="col-sm-3 control-label"> Password: </label>
+          <div class="col-sm-8">
+          <input type="Password"  class="form-control" id="password_field"  placeholder="Your password" /> </div> </div>
+
+           <div class="form-group">
+         
+          
+          <div class='col-sm-offset-3 col-sm-7'>
+         <button class="y" id="clic" onclick="login()"> <span class="glyphicon glyphicon-log-in"></span> Login into your Account </button>  </div>
+             </div>
+
+<div class='col-sm-offset-3 col-sm-9'>
+<label  class="col-sm-7 control-label">  Click other options for Logins </label>
+</div>
+<br><br><br>
+
+<div class='col-sm-offset-3 col-sm-9'>
+<a href="/signup.html"><button type="button" class="btn btn-danger"> <span class="glyphicon">&#xe008;</span> Click here for new account. </button></a>
+ <label> | </label>
+ <label>Signup with faceBook.. <button type="button"  name="button" class="btn btn-social-icon btn-facebook" onclick="facelogin()"> 
+    <span class="fa fa-facebook"></span>
+  </button>
+  </label>
+</div>
+ </form>
+</div> 
+      </div>
+      </div>
+    </div>
+
+ 
+
+  <div class="container" >   
+  <div class="row">
+  
+    <div class="col-md-7">
+    <div id="user_div" class="loggedin-div">
+     <form class="form-horizontal" role="form"  onsubmit="return false" onclick="">
+
+           
+    <button type="button" class="btn btn-danger" onclick="logout()"> <span class="glyphicon glyphicon-log-out"></span> Logout  </button> 
+   <br>
+   <legend>Gaming App.</legend>
+   
+    <div class="row">
+    <p id="user_para2">Welcome ! You're currently logged in.</p>
+    <p id="user_para"> </p>
+<legend> Kindly attempt the following question below.</legend>
+<label class="col-m-2 control-label">1.  Who is the Nigeria President ?</label>
+<br><br>
+<form class="w3-container w3-card-4">
+<p>
+<input class="w3-radio" type="radio" name="1"  value="Soji Okunnuga">
+<label>Soji Okunuga</label></p>
+<p>
+<input class="w3-radio" type="radio"  name="1"  value="Nnamdi Azikiwe">
+<label>Nnamdi Azikiwe</label></p>
+<p>
+<input class="w3-radio" type="radio" name="1"  value="Ahmed Tinubu">
+<label>Ahmed Tinubu</label></p>
+<p>
+<input class="w3-radio" type="radio" name="1"  value="Donald Trump" >
+<label>Donald Trump</label></p>
+
+</form>
+</form>
+</div>   
+</div>
+</div>
+</div>
+
+   
+
+<script src="https://www.gstatic.com/firebasejs/4.12.0/firebase.js"></script>
+<script>
+  // Initialize Firebase
+  var config = {
+    apiKey: "AIzaSyCA2FKIQgnygLO0TPErIkyEo3P7oLyz0uQ",
+    authDomain: "login-bef04.firebaseapp.com",
+    databaseURL: "https://login-bef04.firebaseio.com",
+    projectId: "login-bef04",
+    storageBucket: "",
+    messagingSenderId: "154009214218"
+  };
+  firebase.initializeApp(config);
+  var provider = new firebase.auth.FacebookAuthProvider();
+
+
+  function facelogin() {
+  firebase.auth().signInWithPopup(provider).then(function(result) {
+  // This gives you a Facebook Access Token. You can use it to access the Facebook API.
+  var token = result.credential.accessToken;
+  // The signed-in user info.
+  var user = result.user;
+  // ...
+}).catch(function(error) {
+  // Handle Errors here.
+  var errorCode = error.code;
+  var errorMessage = error.message;
+  // The email of the user's account used.
+  var email = error.email;
+  // The firebase.auth.AuthCredential type that was used.
+  var credential = error.credential;
+  // ...
+});
+
+}
+
+
+</script>
+
+<script src="index.js"></script>
+
+
+</body>
+</html>
