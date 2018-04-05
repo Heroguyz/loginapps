@@ -135,7 +135,7 @@ body {
     height: 128px;
     border: 8px solid rgba(255, 255, 255, 0.7);
     position: absolute;
-    top: 103px;
+    top: 170px;
 }
 img {
     max-width: 100%;
@@ -143,7 +143,7 @@ img {
 }
 .p-image {
   position: absolute;
-  top: 167px;
+  top: 240px;
   left: 0px;
   color: #666666;
   transition: all .3s cubic-bezier(.175, .885, .32, 1.275);
@@ -247,7 +247,7 @@ img {
         
         <input type="file" class="file-upload" value="upload" accept=".jpg" id="fileButton" />
         <br><br><br><br><br>
-        <label> <span style='font-size:25px;color:red' class="glyphicon glyphicon-warning-sign"></span>   After uploaded, wait until the bar status is completed (100%) and then click next </label>
+        <label> <span style='font-size:25px;color:red' class="glyphicon glyphicon-warning-sign"></span> After the file had been uploaded, kindly wait until the bar status is completed (100%) and then click next </label>
         <progress class="myProgress" value="1" max="100" id="uploader"> 0% </progress>
        <!-- <progress class="" value="0" max="100" id="uploader">0%</progress> -->
      </div>
@@ -255,13 +255,13 @@ img {
 </div>
 
 
-<br><br><br><br><br><br><br><br><br><br>
+<br><br><br><br><br>
 
 <div>
 <br><br>
     <p> Upload your profile picture and click next for the quiz. </p>
 
-<a href="https://heroguyz.github.io/loginapps.io/index.html"> <button class="btn btn-primary" type="button"><span class="glyphicon glyphicon-triangle-right"></span>   NEXT.. </button></a>
+<a href="/index.html"> <button class="btn btn-primary" type="button"><span class="glyphicon glyphicon-triangle-right"></span>   NEXT.. </button></a>
 </div>
 
 </form>
@@ -270,37 +270,7 @@ img {
 </div>
 </div>
 
-<script type="text/javascript">
-  
-$(document).ready(function() {
-
-    
-    var readURL = function(input) {
-        if (input.files && input.files[0]) {
-            var reader = new FileReader();
-
-            reader.onload = function (e) {
-                $('.profile-pic').attr('src', e.target.result);
-            }
-    
-            reader.readAsDataURL(input.files[0]);
-        }
-    }
-    
-
-    $(".file-upload").on('change', function(){
-        readURL(this);
-    });
-    
-    $(".upload-button").on('click', function() {
-       $(".file-upload").click();
-    });
-});
-
-
-</script>
-
-
+<script type="text/javascript" src="/code.js"></script>
 
 <script src="https://www.gstatic.com/firebasejs/4.12.0/firebase.js"></script>
 <script>
@@ -315,7 +285,7 @@ $(document).ready(function() {
   };
   firebase.initializeApp(config);
 </script>
-<script src="https://heroguyz.github.io/loginapps.io/index.js"></script>
+<script src="/index.js"></script>
 
 </body>
 </html>
